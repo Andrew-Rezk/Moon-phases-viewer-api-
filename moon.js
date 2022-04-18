@@ -74,7 +74,7 @@ xhr.onreadystatechange = function (){
            }  else if (data.currentConditions.moonphase === 0.5) {
             moonPhase.innerHTML = "It is currently a Full Moon" + "<br>" +`<img src = '/images/full-moon.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase < 0.75) {
-            moonPhase.innerHTML = "It is currently a Waning Gibbous " + "<br>" +`<img src = '/images/full-moon.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Waning Gibbous " + "<br>" +`<img src = '/images/wanning-gibbus.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase === 0.75) {
             moonPhase.innerHTML = "It is currently a Last Quarter" + "<br>" +`<img src = '/images/last-quarter.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase > 0.75) {
