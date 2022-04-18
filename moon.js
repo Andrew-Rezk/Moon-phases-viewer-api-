@@ -64,21 +64,21 @@ xhr.onreadystatechange = function (){
 
             //if statements to check code value (0-1) for moon phase based on moon phase output by api. The webpage will display the name of the phase and an image icon of the phase accordingly.
            if (data.currentConditions.moonphase === 0){
-            moonPhase.innerHTML = "It is currently a New Moon" + "<br>" +`<img src = '/images/new-moon.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a New Moon" + "<br>" +`<img src = 'images/new-moon.png' class="moonimg"></img>`;
            } else if (data.currentConditions.moonphase < 0.25) {
-            moonPhase.innerHTML = "It is currently a Waxing Crescent" + "<br>" +`<img src = '/images/waxing-crescent.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Waxing Crescent" + "<br>" +`<img src = 'images/waxing-crescent.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase === 0.25) {
-            moonPhase.innerHTML = "It is currently a First Quarter" + "<br>" +`<img src = '/images/first-quarter.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a First Quarter" + "<br>" +`<img src = 'images/first-quarter.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase < 0.5) {
-            moonPhase.innerHTML = "It is currently a Waxing Gibbous" + "<br>" +`<img src = '/images/waxing-gibbus.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Waxing Gibbous" + "<br>" +`<img src = 'images/waxing-gibbus.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase === 0.5) {
-            moonPhase.innerHTML = "It is currently a Full Moon" + "<br>" +`<img src = '/images/full-moon.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Full Moon" + "<br>" +`<img src = 'images/full-moon.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase < 0.75) {
-            moonPhase.innerHTML = "It is currently a Waning Gibbous " + "<br>" +`<img src = '/images/wanning-gibbus.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Waning Gibbous " + "<br>" +`<img src = 'images/wanning-gibbus.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase === 0.75) {
-            moonPhase.innerHTML = "It is currently a Last Quarter" + "<br>" +`<img src = '/images/last-quarter.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Last Quarter" + "<br>" +`<img src = 'images/last-quarter.png' class="moonimg"></img>`;
            }  else if (data.currentConditions.moonphase > 0.75) {
-            moonPhase.innerHTML = "It is currently a Waning Crescent" + "<br>" +`<img src = '/images/waning-crescent.png' class="moonimg"></img>`;
+            moonPhase.innerHTML = "It is currently a Waning Crescent" + "<br>" +`<img src = 'images/waning-crescent.png' class="moonimg"></img>`;
            }  
 
         //Handle errors fetching API
