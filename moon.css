@@ -1,0 +1,51 @@
+
+/* Heading and subheading styling */
+#title {
+    text-align: center;
+    margin-top: 5%;
+    color: black
+}
+
+#title2 {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+/* Bootstrap card customization */
+.card {
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    transform: scale(1.5);
+    box-shadow: 5px 10px;
+}
+
+#city-text {
+    margin-right: 8%;
+    margin-top: 3%;
+    transform: scale(1.3);
+}
+
+.btn.btn-success {
+    background-color: black;
+    border: none;
+}
+
+/* User input customization */
+#city, #moon-phase, #viewing {
+    font-weight: 700;
+    margin: auto;
+    width: 50%;
+}
+
+.moonimg{
+margin-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin-top: 10em;
+        width: 60%;
+    }
+}
